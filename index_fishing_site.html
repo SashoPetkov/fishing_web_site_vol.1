@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles/style_fishing_site.css">
+    <link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rum+Raisin" rel="stylesheet">
+    <title>One Bulgarian`s Fishing Site</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="" alt="">
+            <h1>One Bulgarian's Fishing Site</h1>
+            <br>
+            <h3>Beautiful places and beautiful fishes</h3>
+        </header>
+        <main>
+            <section class="carousel">
+                <img src="" alt="fishing_trip_pic_1">
+                <img src="" alt="fishing_trip_pic_2">
+                <img src="" alt="fishing_trip_pic_3">
+                <img src="" alt="fishing_trip_pic_4">
+                <img src="" alt="fishing_trip_pic_5">
+            </section>
+            <section>
+                <article>
+                    <a href="fishing_bulgaria.html"><h4>Adventures in Bulgaria</h4></a>
+                    <a href="img/Bulgaria_map.gif" target="_blank">
+                        <img src="img/Bulgaria_map.gif" alt="bulgarian_map">
+                    </a>
+                </article>
+                <article>
+                    <a href="fishing_greece.html"><h4>With Towel and Hook in Greece</h4></a>
+                    <a href="img/Greece_map1.gif" target="_blank">
+                        <img src="img/Greece_map1.gif" alt="greece_map">
+                    </a>
+                </article>
+            </section>
+        </main>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index_fishing_site.html">
+                        <img src="img/home.png" alt="home_btn">
+                        <input type="button" value="Home">
+                    </a>
+                </li>
+                <li>
+                    <a href="fishing_equipment.html">
+                        <img src="img/tools.png" alt="fishing_tools_btn">
+                        <input type="button" value="Fishing equipment">
+                    </a>
+                </li>
+                <li class="drop">
+                    <img src="img/road.png" alt="adventures_btn">
+                    <input type="button" value="Fishing adventures" class="dropbtn">
+                    <ul id="dropd" class="dropdown-content">
+                        <li class="adventures-1">
+                            <a href="adv_bulgaria.html">
+                                <img src="img/bulgaria_flag.png" alt="bg_flag">
+                                <input type="button" value="Adventures in Bulgaria">
+                            </a>
+                        </li>
+                        <li class="adventures-1">
+                            <a href="adv_greece.html">
+                                <img src="img/greece_flag.png" alt="gr_flag">
+                                <input type="button" value="Adventures in Greece">
+                            </a>    
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="fishes.html">
+                        <img src="img/fishes.png" alt="fishes_btn">
+                        <input type="button" value="Fishes info">
+                    </a>
+                </li>
+                <li>
+                    <a href="sponsors.html">
+                        <img src="img/sponsor.png" alt="sponsors_btn">
+                        <input type="button" value="Sponsors">
+                    </a>
+                </li>
+                <li>
+                    <a href="contacts.html">
+                        <img src="img/contacts.png" alt="contacts_btn">
+                        <input type="button" value="Contacts & For Us">
+                    </a>
+                </li>
+                <li>
+                    <a href="photos.html">
+                        <img src="img/photos.png" alt="photos_btn">
+                        <input type="button" value="Photos">
+                    </a>
+                </li>
+            </ul>
+            <div class="like-facebook"></div>
+        </nav>
+        <aside class="info-sites">
+            <img src="img/sites.png" alt="sites">
+            <h2>Useful sites:</h2>
+            <a href="https://www.nariba.com/forum/" target="_blank">
+                <img src="img/nariba_logo.png" alt="nariba.com">
+            </a>
+            <a href="http://forum.fishing-mania.com/" target="_blank">
+                <img src="img/fm-logo.png" alt="fishing-mania.com">
+            </a>
+            <a href="http://www.aquasport-n.com/" target="_blank"></a>
+            <a href="http://www.orozov.com/" target="_blank">
+                <img src="img/orozov.png" alt="orozov.com">
+            </a>
+            <a href="http://riboco.com/" target="_blank">
+                <img src="img/riboco.png" alt="riboco.com">
+            </a>
+            <a href="http://captainhook.bg/" target="_blank">
+                <img src="img/captain.png" alt="captain_hook">
+            </a>
+            <a href="http://www.vidrax-fishing.com/" target="_blank">
+                <img src="img/vidrax.png" alt="vidrax">
+            </a>
+            <p></p>
+            <a href="http://www.ribibg.com/" target="_blank"></a>
+        </aside>
+        <footer>
+            <audio src="1476185942.mp3" controls="true"></audio>
+            <a href="https://www.facebook.com">
+                <img src="img/facebook.png" alt="no_facebook_icon">
+            </a>
+            <form action="/" method="get">
+                <input type="search" placeholder="search...">
+            </form>
+        </footer>
+    </div>
+</body>
+<script>
+// function myFunction() {
+//     document.getElementById("dropd").classList.toggle("show");
+// }
+
+// // Close the dropdown if the user clicks outside of it
+// window.onclick = function(event) {
+//   if (!event.target.matches('.dropbtn')) {
+
+//     var dropdowns = document.getElementsByClassName("dropdown-content");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// }
+            //  differtent
+
+var dropbtn = document.getElementsByClassName("dropbtn")[0];
+console.log(dropbtn);
+dropbtn.addEventListener("click", dropAdv);
+
+function dropAdv() {
+    document.getElementById("dropd").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.addEventListener("click", function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+});
+
+// window.addEventListener("click", function(event) {
+//     console.log(event.target.matches('.dropbtn'));
+//     if (!event.target.matches('.dropbtn')) {
+//         document.querySelector('.dropdown-content').classList.remove('show');
+//     }
+// });
+
+</script>
+</html>

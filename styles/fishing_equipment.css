@@ -1,0 +1,248 @@
+#wrapper {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    /*position: relative;*/
+    top: 0;
+    font-family: "Rum raisin";
+}
+        /* HEADER */
+header {
+    background-color: #009cd3;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+header > img {
+    float: left;
+    height: 90%;
+    width: 15.8%;
+    background: blue;
+    margin: 5px 0 0 5px;
+}
+header > img:after {
+    clear: both;
+}
+header > h1, header > h3 {
+    display: inline-block;
+    margin: 0 auto;
+    font-family: "Aclonica", sans-serif;;
+} 
+
+header > h1 {
+    font-size: 2.5em;
+    margin: 10px 0 2px 0;
+}
+ .adventures-1{
+    font-size: 0.9em;
+}
+        /* ASIDE 1 */
+.menu {
+    width: 200px;
+    display: inline-block;
+    border: 2px solid #009cd3;
+    box-sizing: border-box;
+    padding-left: 11px; 
+    border-radius: 10px;
+    background-color: rgba(0, 156, 211, 0.15);
+    float: left ;
+    margin-bottom: 10px;
+}
+.menu:after {
+    clear: both;
+}
+.menu ul {
+    padding: 0;
+} 
+.menu li {
+    list-style-type: none;
+    width: 175px;
+    box-sizing: border-box;
+    margin-top: 3px;
+}
+.dropdown-content {
+    display: none;
+}
+.dropbtn {
+    display: block;
+    cursor: pointer;
+}
+.show {
+    display: block;
+}
+.menu input {
+    width: 175px;
+    text-align: right;
+    height: 35px;
+    font-size: 1.0em;
+    font-weight: bold;
+    border-radius: 5px;
+    background: rgba(255, 151, 53, 0.8);
+    color: #000;  
+    letter-spacing: 0.065em;
+}
+.menu input:hover {
+    cursor: pointer;
+    background: #93bded;
+}
+.menu li ul a img {
+    position: absolute;    
+}
+.menu li > a > img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 3px 0 0 3px;
+}
+.menu li:nth-of-type(3) > img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 3px 0 0 3px;
+}
+.menu .adventures-1 > a > img {
+    height: 17px;
+    width: 25px;
+    margin: 8px 0 0 145px;
+}
+.adventures-1 > a input {
+    text-align: left;
+}
+.menu #dropd input {
+    background: #009cd3;
+}
+.menu #dropd input:hover {
+    background-color: rgba(255, 151, 53, 0.4)
+}
+        /* ASIDE 2*/
+
+.info-sites {
+    height: auto;
+    width: 200px;
+    display: inline-block;
+    border: 2px solid #009cd3;
+    box-sizing: border-box;
+    padding-left: 11px; 
+    border-radius: 10px;
+    background-color: rgba(0, 156, 211, 0.15);
+    float: left;
+    /*position: absolute;*/
+    /*top: 120px; */
+    margin-bottom: 10px;
+    vertical-align: bottom;
+}
+.info-sites:after {
+    clear: both;
+}
+
+
+        /* MAIN */
+
+main {
+    width: 83%;
+    display: inline-block;
+    margin-left: 5px;
+    float: right;
+    text-align: center;
+    font-size: 1.2em;
+}
+main:after {
+    clear: both;
+}
+main article {
+    display: inline-block;
+    width: 49%;
+    height: 388px;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+article img {
+    width: 100%;
+}
+article img:last-of-type {
+    display: inline-block;
+}
+main > section:first-of-type {
+    margin-bottom: 35px;
+}
+h4 {
+    width: 100%;
+    margin: 15px auto;
+    color: #009cd3;
+}
+article > a:first-of-type {
+    text-decoration: none;
+}
+main > section:first-of-type p{
+    display: inline-block;
+    width: 60%;
+    margin: 0;
+}
+main > section:first-of-type > article > img {
+    width: 35%;
+    height: auto;
+    float: left;
+}
+main > section:first-of-type img:after {
+    clear: both;
+}
+main > section:first-of-type > article {
+    border: 2px solid #009cd3;
+    border-radius: 10px; 
+    overflow-y: scroll;
+}
+main > section:first-of-type, .menu {
+    margin-top: 5px;
+}
+section:nth-of-type(2) > article:last-of-type h4 {
+    color: rgba(255, 151, 53, 1);
+}
+
+            /* FOOTER */
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(255, 151, 53, 1);
+    float: left;
+    box-sizing: border-box;
+}
+footer:after {
+    clear: both;
+}
+footer input, footer > a, footer > audio {
+    float: right;
+    
+}
+footer input:after, footer > a:after, footer > audio:after {
+    clear: both;
+}
+footer input {
+    margin: 29px 45px 0 0;
+    border-radius: 20px;
+    width: 160px;
+    border: 2px solid black;
+    padding-left: 30px;
+    box-sizing: border-box;
+    background-image: url("search.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 4px; 
+}
+footer > audio {
+    margin: 24px 10px 0 0;
+    width: 200px;
+    border: 2px solid black;
+}
+footer > a > img {
+    height: 50px;
+    width: 50px;
+    margin: 17px 12px 0 0;
+}
+
+
+        /* RESPONSIVE */
+
+
